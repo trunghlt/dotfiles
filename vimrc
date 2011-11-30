@@ -1,5 +1,7 @@
 " Set theme                                                                                                            
-" colorscheme rdark
+set bg=dark
+set t_Co=256
+colorscheme moria
 
 " set ls=2 " always show status line
 set scrolloff=3     " keep 3 lines when scrolling
