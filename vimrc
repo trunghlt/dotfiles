@@ -1,7 +1,6 @@
 " Set theme                                                                                                            
-set bg=dark
 set t_Co=256
-colorscheme moria
+colorscheme zenburn
 
 " set ls=2 " always show status line
 set scrolloff=3     " keep 3 lines when scrolling
@@ -48,4 +47,10 @@ set fileencodings=utf-8,iso-8859-15
 map <F7> :tabp<CR>
 map <F8> :tabn<CR>
 
-match ErrorMsg '\%>79v.\+'
+" Highlight long lights
+if exists('+colorcolumn') " Check if this vim version has colorcolumn property
+    set colorcolumn=80
+else
+    au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>79v.\+', -1)                                                   
+endif
+
