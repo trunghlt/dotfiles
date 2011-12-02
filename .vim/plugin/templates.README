@@ -1,0 +1,81 @@
+Adrian's simple templating system for Vim
+=========================================
+
+Installation
+------------
+
+Copy over the plugin and the example templates to your dot-Vim directory:
+
+  $ mkdir -p ~/.vim
+  $ cp -r plugin templates ~/.vim
+
+Done!
+
+
+Usage
+-----
+
+There are a number of options to use a template:
+
+* Create a new file giving it a name. The suffix will be used to determine
+  which template to use. E.g:
+
+     $ vim foo.c
+
+* In a buffer, use ":Template foo" to load a template for file with suffix
+  "foo". E.g. from within Vim:
+
+     :Template c
+
+
+Template search order
+---------------------
+
+1. A file named "=template.<suffix>" in the current directory. If not found,
+   goto (2).
+
+2. Go up a directory and goto (1), if not possible, goto (3).
+
+3. Try to use "~/.vim/templates/template.<suffix>".
+
+
+Variables in templates
+----------------------
+
+The following variables will be expanded in templates:
+
+%DAY%, %YEAR%, %MONTH%
+    Numerical day of the month, year and month.
+%DATE%
+    Date in YYYY-mm-dd format
+%TIME%
+    Time in HH:MM format
+%FDATE%
+    Full date (date + time), in YYYY-mm-dd HH:MM format.
+%FILE%
+    File name, without extension.
+%FFILE%
+    File name, with extension.
+%EXT%
+    File extension.
+%MAIL%
+    Current user's e-mail address. May be overriden by defining g:email.
+%USER%
+    Current logged-in user name. May be overriden by defining g:username.
+%HOST%
+    Host name.
+%GUARD%
+    A string with alphanumeric characters and underscores, suitable for use
+    in proprocessor guards for C/C++/ObjC header files.
+%HERE%
+    Expands to nothing, but ensures that the cursor will be placed in its
+    position after expanding the template.
+
+
+Licensing
+---------
+
+This is distributed under the terms of the GNU GPLv3 license.
+
+
+
