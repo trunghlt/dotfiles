@@ -44,6 +44,10 @@ set nobomb
 set termencoding=utf-8
 set fileencodings=utf-8,iso-8859-15
 
+# Autocomplete filenames to the longest possible rather than a complete filename
+set wildmode=longest:full
+set wildmenu
+
 map <F7> :tabp<CR>
 map <F8> :tabn<CR>
 
