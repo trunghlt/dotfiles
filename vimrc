@@ -25,7 +25,7 @@ set expandtab
 set cindent
 set smartindent
 set autoindent
-set pastetoggle=<F2>
+set pastetoggle=<F12>
 set nu!
 
 " Set backspace config
@@ -50,6 +50,8 @@ set wildmenu
 
 map <F7> :tabp<CR>
 map <F8> :tabn<CR>
+map <F2> :w<CR>
+map <F3> :e 
 
 " Highlight long lights
 if exists('+colorcolumn') " Check if this vim version has colorcolumn property
