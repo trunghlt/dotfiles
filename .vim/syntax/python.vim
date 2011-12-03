@@ -77,7 +77,9 @@ syn region pythonRawString	start=+[uU]\=[rR]'+ end=+'+ skip=+\\\\\|\\'+ contains
 syn region pythonRawString	start=+[uU]\=[rR]"+ end=+"+ skip=+\\\\\|\\"+ contains=@Spell
 syn region pythonRawString	start=+[uU]\=[rR]"""+ end=+"""+ contains=@Spell
 syn region pythonRawString	start=+[uU]\=[rR]'''+ end=+'''+ contains=@Spell
-syn region pythonComment    start=+\(:\n[\t ]*\)\@<=\z('''\|"""\)+ end=+\z1+ keepend contains=pythonEscape,pythonTodo,@Spell # copied & pasted from http://vim.wikia.com/wiki/Python_triple-quoted_comments
+syn region pythonComment
+      \ start=+\(:\n[\t ]*\)\@<=\z('''\|"""\)+ end=+\z1+ keepend
+                    \ contains=pythonEscape,pythonTodo,@Spell
 syn match  pythonEscape		+\\[abfnrtv'"\\]+ contained
 syn match  pythonEscape		"\\\o\{1,3}" contained
 syn match  pythonEscape		"\\x\x\{2}" contained
