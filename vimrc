@@ -44,7 +44,7 @@ set nobomb
 set termencoding=utf-8
 set fileencodings=utf-8,iso-8859-15
 
-# Autocomplete filenames to the longest possible rather than a complete filename
+" Autocomplete filenames to the longest possible rather than a complete filename
 set wildmode=longest:full
 set wildmenu
 
