@@ -25,7 +25,7 @@ set expandtab
 set cindent
 set smartindent
 set autoindent
-set pastetoggle=<F12>
+set pastetoggle=<F5>
 set nu!
 
 " Set backspace config
