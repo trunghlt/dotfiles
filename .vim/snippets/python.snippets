@@ -88,5 +88,13 @@ snippet _
 snippet logging.basicConfig
 	logging.basicConfig(level=logging.DEBUG,
 						format='%(asctime)s %(levelname)s %(message)s',
-						filename='/tmp/myapp.log',
+						filename='${1:`Filename("$1", "foo")`}.log',
 						filemode='w')
+# optparse
+snippet optparse
+	from optparse import OptionParser
+	parser = OptionParser(usage="Usage: %prog [options] param1 param2")	
+	parser.add_option("--verbose", dest="verbose", action="")
+	parser.add_option("-${1:s}", "--${2:optname}", dest="${3:$2}",
+					   default="${4:optdefault}", action="${5:optaction}",
+					   help="${6:Help}")
