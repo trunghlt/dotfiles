@@ -1,11 +1,9 @@
-""" %HERE%
-
-Copyright © %YEAR% Semetric Ltd <%USER%@musicmetric.com>
-
-"""
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # vim:fenc=utf-8
+""" %HERE%
+
+"""
 import logging
 
 log = logging.getLogger(__name__)
