@@ -86,12 +86,14 @@ snippet _
 	__${1:init}__${2}
 # basicLogging
 snippet logging.basicConfig
+	# Setup basic logging configuration
 	logging.basicConfig(level=logging.DEBUG,
 						format='%(asctime)s %(levelname)s %(message)s',
 						filename='${1:`Filename("$1", "foo")`}.log',
 						filemode='w')
 # optparse
 snippet optparse
+	# Parse command options
 	from optparse import OptionParser
 	parser = OptionParser(usage="Usage: %prog [options] param1 param2")	
 	parser.add_option("--verbose", dest="verbose", action="")
