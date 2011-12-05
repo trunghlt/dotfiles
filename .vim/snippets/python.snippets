@@ -107,5 +107,8 @@ snippet add_option
 	add_option("-${1:s}", "--${2:optname}", dest="${3:$2}",
 				default="${4:optdefault}", action="${5:optaction}",
 				help="${6:Help}")
-	
-
+# Config parser
+snippet cfg
+	from ConfigParser import SafeConfigParser
+	cfg = SafeConfigParser()
+	cfg.read("${1:fname}")
