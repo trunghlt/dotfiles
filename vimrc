@@ -26,7 +26,7 @@ set cindent
 set smartindent
 set autoindent
 set pastetoggle=<F5>
-set nu!
+set nu
 
 " Set backspace config
 set backspace=eol,start,indent
