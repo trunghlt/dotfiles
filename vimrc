@@ -61,3 +61,9 @@ else
     au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>79v.\+', -1)                                                   
 endif
 
+
+" NERD Comment plugin
+filetype plugin on
+
+" NERD Tree plugin
+map <F4> :NERDTreeToggle<CR>
