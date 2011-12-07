@@ -1,4 +1,5 @@
 " Set theme                                                                                                            
+let g:zenburn_high_Contrast=1
 set t_Co=256
 colorscheme zenburn
 
@@ -53,6 +54,7 @@ map <F8> :tabn<CR>
 map <F2> :w<CR>
 map <F3> :e 
 map `<F3> :tabe 
+map q :q<CR>
 
 " Highlight long lights
 if exists('+colorcolumn') " Check if this vim version has colorcolumn property
