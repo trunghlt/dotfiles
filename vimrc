@@ -53,6 +53,7 @@ map <F8> :tabn<CR>
 map <F2> :w<CR>
 map <F3> :e 
 map `<F3> :tabe 
+map tc :tabclose<CR>
 
 " Highlight long lights
 if exists('+colorcolumn') " Check if this vim version has colorcolumn property
