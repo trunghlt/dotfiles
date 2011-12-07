@@ -1,4 +1,5 @@
 " Set theme                                                                                                            
+let g:zenburn_high_Contrast=1
 set t_Co=256
 colorscheme zenburn
 
@@ -13,7 +14,7 @@ set cursorline
 " Default Colors for CursorLine
 highlight  CursorLine cterm=underline ctermbg=None ctermfg=None
 " Change Color when entering Insert Mode
-autocmd InsertEnter * highlight  CursorLine cterm=bold ctermbg=darkgray ctermfg=None
+autocmd InsertEnter * highlight  CursorLine cterm=bold ctermbg=None ctermfg=None
 " Revert Color to default when leaving Insert Mode
 autocmd InsertLeave * highlight  CursorLine cterm=underline ctermbg=None ctermfg=None
 
@@ -21,6 +22,8 @@ autocmd InsertLeave * highlight  CursorLine cterm=underline ctermbg=None ctermfg
 set autoread
 
 set tabstop=4
+set shiftwidth=4
+set smarttab
 set expandtab
 set cindent
 set smartindent
@@ -54,6 +57,7 @@ map <F2> :w<CR>
 map <F3> :e 
 map `<F3> :tabe 
 map tc :tabclose<CR>
+map q :q<CR>
 
 " Highlight long lights
 if exists('+colorcolumn') " Check if this vim version has colorcolumn property
