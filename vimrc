@@ -67,6 +67,7 @@ imap <F2> <C-[>:w<CR>i
 " Ctrl+f delete everything right from the cursor to the start of next word (and
 " put it into the default register)
 imap <C-f> <C-[>ldwi
+imap <C-z> <C-[>ui
 
 " Highlight long lights
 if exists('+colorcolumn') " Check if this vim version has colorcolumn property
