@@ -30,6 +30,8 @@ set smartindent
 set autoindent
 set pastetoggle=<F5>
 set nu
+" Set auto text wrapping
+set tw=79
 
 " Set backspace config
 set backspace=eol,start,indent
@@ -53,10 +55,18 @@ set wildmenu
 
 map <F7> :tabp<CR>
 map <F8> :tabn<CR>
+map <C-e> :q<CR>
 map <F2> :w<CR>
 map <F3> :e 
 map `<F3> :tabe 
 map tc :tabclose<CR>
+
+""" Insert mode only
+" F2 to save
+imap <F2> <C-[>:w<CR>i
+" Ctrl+f delete everything right from the cursor to the start of next word (and
+" put it into the default register)
+imap <C-f> <C-[>ldwi
 
 " Highlight long lights
 if exists('+colorcolumn') " Check if this vim version has colorcolumn property
