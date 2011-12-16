@@ -14,3 +14,6 @@ Vi-improved:
 ## Vim's tips:
 
 - [Navigation](http://www.thegeekstuff.com/2009/03/8-essential-vim-editor-navigation-fundamentals/)
+
+## [Snippets](https://github.com/trunghlt/dotfiles/tree/master/.vim/snippets)
+
