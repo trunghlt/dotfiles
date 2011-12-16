@@ -9,6 +9,7 @@ Vi-improved:
 - F4: open NERD tree
 - Ctrl-f: delete a word after cursor in insert mode
 - Ctrl-e: exit
+- Ctrl-y and Ctrl-x to copy and paste in cross vim instances.
 
 ## Vim's tips:
 
