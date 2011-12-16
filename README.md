@@ -15,5 +15,11 @@ Vi-improved:
 
 - [Navigation](http://www.thegeekstuff.com/2009/03/8-essential-vim-editor-navigation-fundamentals/)
 
-## [Snippets](https://github.com/trunghlt/dotfiles/tree/master/.vim/snippets)
+## Snippets:
+- Type snippet signature and Tab
+- Look for snippet signatures [here](https://github.com/trunghlt/dotfiles/tree/master/.vim/snippets)
 
+## Templates:
+- Vim test.py and you have a python template there :)
+- Or type :Template py for python template
+- Look for other templates [here](https://github.com/trunghlt/dotfiles/tree/master/.vim/templates)
