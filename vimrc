@@ -80,6 +80,12 @@ endif
 " NERD Comment plugin
 filetype plugin on
 
+" Enable Pylint check
+autocmd FileType python compiler pylint
+" Disable highlighted lines
+let g:pylint_inline_highlight = 0
+
+
 " NERD Tree plugin
 map <F4> :NERDTreeToggle<CR>
 
