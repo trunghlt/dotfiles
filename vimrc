@@ -82,3 +82,9 @@ filetype plugin on
 
 " NERD Tree plugin
 map <F4> :NERDTreeToggle<CR>
+
+"Copy and paste between different Vim sessions
+"Ctrl+Y to yank and Ctrl+P to paste
+nmap _Y :!echo ""> ~/.vi_tmp<CR><CR>:w! ~/.vi_tmp<CR>
+vmap _Y :w! ~/.vi_tmp<CR>
+nmap _P :r ~/.vi_tmp<CR>
