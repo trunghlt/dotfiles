@@ -1,5 +1,5 @@
 " Set theme                                                                                                            
-let g:zenburn_high_Contrast=1
+" let g:zenburn_high_Contrast=1
 set t_Co=256
 colorscheme zenburn
 
@@ -85,6 +85,6 @@ map <F4> :NERDTreeToggle<CR>
 
 "Copy and paste between different Vim sessions
 "Ctrl+Y to yank and Ctrl+P to paste
-nmap _Y :!echo ""> ~/.vi_tmp<CR><CR>:w! ~/.vi_tmp<CR>
-vmap _Y :w! ~/.vi_tmp<CR>
-nmap _P :r ~/.vi_tmp<CR>
+nmap <C-y> :!echo ""> ~/.vi_tmp<CR><CR>:w! ~/.vi_tmp<CR>
+vmap <C-y> :w! ~/.vi_tmp<CR>
+nmap <C-x> :r ~/.vi_tmp<CR>
