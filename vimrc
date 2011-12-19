@@ -61,6 +61,12 @@ map <F3> :e
 map `<F3> :tabe 
 map tc :tabclose<CR>
 
+" Window navigation
+map <c-j> <c-w>j
+map <c-k> <c-w>k
+map <c-l> <c-w>l
+map <c-h> <c-w>h
+
 """ Insert mode only
 " F2 to save
 imap <F2> <C-[>:w<CR>i
