@@ -88,6 +88,8 @@ filetype plugin on
 
 " Enable Pylint check
 autocmd FileType python compiler pylint
+" Disable calling pylint on saving
+let g:pylint_onwrite = 0
 " Disable highlighted lines
 let g:pylint_inline_highlight = 0
 
