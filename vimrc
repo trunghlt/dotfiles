@@ -60,6 +60,7 @@ map <F2> :w<CR>
 map <F3> :e 
 map `<F3> :tabe 
 map tc :tabclose<CR>
+map <C-s> <F2>
 
 " Window navigation
 map <c-j> <c-w>j
@@ -68,8 +69,15 @@ map <c-l> <c-w>l
 map <c-h> <c-w>h
 
 """ Insert mode only
+imap jj <Esc>j
+" Ctrl-space to toggle insert mode
+nnoremap <C-space> a
+imap <C-space> <Esc>
+imap <C-s> <C-[>:w<CR>i
 " F2 to save
 imap <F2> <C-[>:w<CR>i
+imap <F7> <C-[>:tabp<CR>
+imap <F8> <C-[>:tabn<CR>
 " Ctrl+f delete everything right from the cursor to the start of next word (and
 " put it into the default register)
 imap <C-f> <C-[>ldwi
