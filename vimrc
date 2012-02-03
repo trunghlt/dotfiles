@@ -8,7 +8,7 @@ set scrolloff=3     " keep 3 lines when scrolling
 set ignorecase      " ignore case when searching 
 set title           " show title in console title bar
 set ttyfast         " smoother changesv
-set wrap
+" set wrap
 
 set cursorline
 " Default Colors for CursorLine
@@ -48,6 +48,7 @@ setglobal fileencoding=utf-8
 set nobomb
 set termencoding=utf-8
 set fileencodings=utf-8,iso-8859-15
+set mouse=a
 
 " Autocomplete filenames to the longest possible rather than a complete filename
 set wildmode=longest:full
@@ -104,6 +105,7 @@ let g:pylint_inline_highlight = 0
 
 " NERD Tree plugin
 map <F4> :NERDTreeToggle<CR>
+imap  <F4> <C-[>:NERDTreeToggle<CR>
 
 "Copy and paste between different Vim sessions
 "Ctrl+Y to yank and Ctrl+P to paste
