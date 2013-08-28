@@ -30,6 +30,7 @@ set smartindent
 set autoindent
 set pastetoggle=<F5>
 set nu
+set backspace=indent,eol,start
 " Set auto text wrapping
 set tw=79
 
