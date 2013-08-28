@@ -1,3 +1,7 @@
+Install
+=======
+> install.sh
+
 Vi-improved:
 ===========
 
