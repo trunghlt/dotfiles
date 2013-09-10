@@ -80,10 +80,14 @@ imap <C-s> <C-[>:w<CR>i
 imap <F2> <C-[>:w<CR>i
 imap <F7> <C-[>:tabp<CR>
 imap <F8> <C-[>:tabn<CR>
-" Ctrl+f delete everything right from the cursor to the start of next word (and
-" put it into the default register)
-imap <C-f> <C-[>ldwi
-imap <C-z> <C-[>ui
+
+" Traversing cursor in insert mode
+inoremap <C-b> <C-o>h
+inoremap <C-n> <C-o>j
+inoremap <C-p> <C-o>k
+inoremap <C-f> <C-o>l
+inoremap <C-a> <C-o>^
+inoremap <C-e> <C-o>$
 
 " Highlight long lights
 if exists('+colorcolumn') " Check if this vim version has colorcolumn property
