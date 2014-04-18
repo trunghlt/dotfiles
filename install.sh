@@ -1,5 +1,6 @@
 # Install all these configuration
-cp vimrc ~/.vimrc
-cp tmux.conf ~/.tmux.conf
-cp screenrc ~/.screenrc
-sudo cp tm /usr/local/bin
+ln -s `pwd`/vimrc ~/.vimrc
+ln -s `pwd`/.vim ~/.vim
+ln -s `pwd`/tmux.conf ~/.tmux.conf
+ln -s `pwd`/screenrc ~/.screenrc
+ln -s `pwd`/tm /usr/local/bin/tm
