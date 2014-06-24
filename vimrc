@@ -32,7 +32,7 @@ set pastetoggle=<F5>
 set nu
 set backspace=indent,eol,start
 " Set auto text wrapping
-set tw=79
+" set tw=79
 
 " Set backspace config
 set backspace=eol,start,indent
@@ -82,12 +82,12 @@ imap <F7> <C-[>:tabp<CR>
 imap <F8> <C-[>:tabn<CR>
 
 " Traversing cursor in insert mode
-inoremap <C-b> <C-o>h
-inoremap <C-n> <C-o>j
-inoremap <C-p> <C-o>k
-inoremap <C-f> <C-o>l
-inoremap <C-a> <C-o>^
-inoremap <C-e> <C-o>$
+"inoremap <C-b> <C-o>h
+"inoremap <C-n> <C-o>j
+"inoremap <C-p> <C-o>k
+"inoremap <C-f> <C-o>l
+"inoremap <C-a> <C-o>^
+"inoremap <C-e> <C-o>$
 
 " Highlight long lights
 if exists('+colorcolumn') " Check if this vim version has colorcolumn property
@@ -117,3 +117,7 @@ imap  <F4> <C-[>:NERDTreeToggle<CR>
 nmap <C-y> :!echo ""> ~/.vi_tmp<CR><CR>:w! ~/.vi_tmp<CR>
 vmap <C-y> :w! ~/.vi_tmp<CR>
 nmap <C-x> :r ~/.vi_tmp<CR>
+
+execute pathogen#infect()
+syntax on
+filetype plugin indent on
